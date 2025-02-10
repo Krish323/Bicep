@@ -1,11 +1,6 @@
+targetScope = 'subscription'
 
-targetScope ='resourceGroup'
-
-resource bicepstoragedemo 'Microsoft.Storage/storageAccounts@2023-05-01' = {
-  name:'bicepstoragedemo'
-  location: 'eastus'
-  sku: {
-    name: 'Standard_LRS'
-  }
-  kind: 'Storage'
+resource testrg 'Microsoft.Resources/resourceGroups@2021-04-01' = {
+  name: 'test-rg'
+  location: 'east us'
 }
